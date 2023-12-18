@@ -100,6 +100,13 @@
       </else>
     </choose>
   </macro>
+  <macro name="date-disambiguate">
+    <choose>
+      <if disambiguate="true">
+        <text macro="issued"/>
+      </if>
+    </choose>
+  </macro>
   <macro name="disambiguate">
     <choose>
       <if disambiguate="true">
@@ -108,10 +115,16 @@
             <text macro="issued"/>
           </if>
           <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-            <text variable="title" font-style="italic" text-case="title" form="short"/>
+            <group delimiter=" ">
+                <text variable="title" font-style="italic" text-case="title" form="short"/>
+                <text macro="date-disambiguate" prefix="(" suffix=")"/>
+            </group>
           </else-if>
           <else>
-            <text variable="title" quotes="true" text-case="title" form="short"/>
+            <group delimiter=" ">
+                <text variable="title" quotes="true" text-case="title" form="short"/>
+                <text macro="issued" prefix="(" suffix=")"/>
+            </group>
           </else>
         </choose>
       </if>
@@ -447,7 +460,17 @@
         <if position="subsequent">
           <group delimiter=", ">
             <text macro="contributors-short"/>
-            <text macro="disambiguate"/>
+            <choose>
+                <if type="bill legal_case legislation document" match="any">
+                    <group delimiter=", ">
+                        <text variable="title" font-style="italic" text-case="title" form="short"/>
+                        <text macro="date-disambiguate"/>
+                    </group>
+                </if>
+                <else>
+                    <text macro="disambiguate"/>
+                </else>
+            </choose>
             <text macro="locators-specific-note"/>
           </group>
           <text macro="point-locators-subsequent"/>

@@ -439,7 +439,7 @@
           <if variable="URL">
             <text variable="URL" prefix=" &lt;" suffix="&gt;"/>
             <group prefix=" [" suffix="]">
-              <text term="accessed"/>
+              <text term="accessed" text-case="capitalize-first"/>
               <date variable="accessed">
                 <date-part name="day" prefix=" "/>
                 <date-part name="month" prefix=" "/>

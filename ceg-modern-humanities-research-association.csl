@@ -263,7 +263,7 @@
       <if type="bill book chapter graphic legal_case legislation motion_picture paper-conference report song" match="any">
         <choose>
           <if is-numeric="volume">
-            <number variable="volume" form="roman" font-variant="small-caps"/>
+            <number variable="volume" font-variant="small-caps"/>
           </if>
           <else>
             <text variable="volume" font-variant="small-caps"/>

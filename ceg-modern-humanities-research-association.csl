@@ -82,7 +82,14 @@
           <text variable="version"/>
         </group>
       </else-if>
-      <else-if type="legal_case interview" match="any">
+      <else-if type="legal_case">
+        <group delimiter=", ">
+            <text variable="title"/>
+            <text variable="number"/>
+            <text variable="authority"/>
+        </group>
+      </else-if>
+      <else-if type="interview">
         <text variable="title"/>
       </else-if>
       <else-if variable="reviewed-author">

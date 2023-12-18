@@ -364,7 +364,7 @@
   </macro>
   <macro name="issued">
     <choose>
-      <if type="report article-newspaper article-magazine personal_communication" match="any">
+      <if type="report article-newspaper article-magazine bill document personal_communication legal_case legislation" match="any">
         <date variable="issued">
           <date-part name="day" suffix=" "/>
           <date-part name="month" suffix=" "/>

@@ -16,7 +16,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>MHRA format with full notes and bibliography, adjusted to the needs for Competition Economists Group</summary>
-    <updated>2023-11-07T12:34:14+00:00</updated>
+    <updated>2023-12-20T12:34:14+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -62,7 +62,7 @@
   </macro>
   <macro name="contributors-note">
     <names variable="author">
-      <name and="text" sort-separator=", " delimiter=", "/>
+      <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", "/>
       <label form="short" prefix=", "/>
       <substitute>
         <text macro="title-note"/>

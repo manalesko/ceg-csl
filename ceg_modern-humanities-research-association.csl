@@ -37,6 +37,7 @@
         <substitute>
           <names variable="editor"/>
           <names variable="translator"/>
+          <text variable="authority"/>
           <text macro="title-note"/>
         </substitute>
       </names>
@@ -65,6 +66,7 @@
       <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="never"/>
       <label form="short" prefix=", "/>
       <substitute>
+        <text variable="authority"/>
         <text macro="title-note"/>
       </substitute>
     </names>
@@ -86,7 +88,7 @@
         <group delimiter=", ">
             <text variable="title"/>
             <text variable="number"/>
-            <text variable="authority"/>
+            <!--text variable="authority"/-->
         </group>
       </else-if>
       <else-if type="interview">
@@ -320,6 +322,7 @@
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
+        <text variable="authority"/>
         <text macro="title-sort-substitute"/>
       </substitute>
     </names>

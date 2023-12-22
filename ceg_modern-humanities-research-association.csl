@@ -241,7 +241,7 @@
             <text macro="issued" prefix=" (" suffix=")"/>
           </if>
           <else>
-            <text macro="issued" prefix=", "/>
+            <text macro="issued" prefix=" (" suffix=")"/>
           </else>
         </choose>
       </if>

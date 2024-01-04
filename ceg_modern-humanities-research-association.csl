@@ -318,7 +318,7 @@
   </macro>
   <macro name="contributors-short">
     <names variable="author">
-      <name form="short" and="text" sort-separator=", " delimiter=", "/>
+      <name form="short" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="never"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>

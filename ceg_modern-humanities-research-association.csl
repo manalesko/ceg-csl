@@ -16,7 +16,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>MHRA format with full notes and bibliography, adjusted to the needs for Competition Economists Group</summary>
-    <updated>2024-01-04T11:30:00+00:00</updated>
+    <updated>2024-04-29T11:30:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -38,6 +38,7 @@
           <names variable="editor"/>
           <names variable="translator"/>
           <text variable="authority"/>
+          <text variable="publisher"/>
           <text macro="title-note"/>
         </substitute>
       </names>
@@ -67,6 +68,7 @@
       <label form="short" prefix=", "/>
       <substitute>
         <text variable="authority"/>
+        <text variable="publisher"/>
         <text macro="title-note"/>
       </substitute>
     </names>
@@ -257,8 +259,8 @@
             <text macro="event"/>
           </group>
           <text macro="publisher"/>
-          <text macro="issued"/>
         </group>
+          <text macro="issued" prefix=", "/>
       </else-if>
       <else>
         <text macro="issued" prefix=", "/>
@@ -323,6 +325,7 @@
         <names variable="editor"/>
         <names variable="translator"/>
         <text variable="authority"/>
+        <text variable="publisher"/>
         <text macro="title-sort-substitute"/>
       </substitute>
     </names>
